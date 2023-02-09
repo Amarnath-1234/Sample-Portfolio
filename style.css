@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=League+Gothic&family=Rubik&family=Sansita+Swashed&family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,11 +18,15 @@
 }
 .navbar{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
 }
 
 .nav-list{
     width: 50%;
-    background-color: rgb(241, 241, 247);
     display:flex;
     align-items: center;
 }
@@ -29,17 +36,17 @@
 }
 .nav-list li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .nav-list li a:hover{
-    color: blue;
+    color: grey;
 }
 .rightnav{
     width: 50%;
+    padding: 0 23px;
     /* display: flex;
     align-items: right; */
     text-align:right ;
-    background-color: rgb(196, 255, 223) ;
 }
 #search{
     padding: 6px ;
@@ -47,4 +54,78 @@
     border: 2px solid black;
     border-radius: 10px;
     font-size: 15px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7)url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.firstSection{
+    height: 100vh;
+}
+.firstHalf{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    /* width: 10em;
+    height: 10em; */
+    width: 70%;
+    border: 2px solid blueviolet;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 40px;
+}
+.text-small{
+    font-size: 17px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 4px; 
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+.btn-sm{
+    padding: 4px 10px;
+    vertical-align: middle;
+}
+.section{
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.paras{
+    padding: 0 10px;
+}
+/* .imgFluid{
+    width: 100%;
+} */
+.left{
+    flex-direction: row-reverse;
 }
